@@ -15,3 +15,8 @@ CREATE TABLE IF NOT EXISTS liveStream (
   watching_now int NOT NULL
 ) ENGINE=INNODB;
 
+
+
+/*  Execute this file from the command line by typing:
+ *    mysql -u root < server/schema.sql
+ *  to create the database and the tables.*/
