@@ -7,10 +7,9 @@ CREATE TABLE IF NOT EXISTS liveStream (
   PRIMARY KEY (id),
   streamer VARCHAR(70) NOT NULL,
   avatar_url VARCHAR(200),
-  stream_url VARCHAR(200) NOT NULL,
   stream_title VARCHAR(100) NOT NULL,
   category VARCHAR(100) NOT NULL,
-  game_poster_url VARCHAR(200) NOT NULL,
+  game_poster_url VARCHAR(200),
   total_views int NOT NULL,
   watching_now int NOT NULL
 ) ENGINE=INNODB;
