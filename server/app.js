@@ -11,12 +11,11 @@ app.use(express.static(__dirname + '/../client/public'));
 
 
 app.get('/api/livestream/:id', (req, res) => {
-  console.log(req.params)
   model.getLiveStream(req.params.id, (err, streamerData) => {
     if (err) {
       console.error(err);
     }
-    res.send(200).json(streamerData);
+    res.status(200).json(streamerData);
   });
 });
 
