@@ -10,7 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/../client/public'));
 
 
-app.get('/api/livestream', (req, res) => {
+app.get('/api/livestream/:id', (req, res) => {
+  console.log(req.params)
   model.getLiveStream(req.params.id, (err, streamerData) => {
     if (err) {
       console.error(err);

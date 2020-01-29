@@ -59,8 +59,11 @@ const randomWatchingNow = Math.floor(Math.random() * (4500 - 2)) + 2;
 
 const seedData = [];
 
+// IMPORTANT: seed data is only good when you have an empty liveStreams table.
+
 for (let i = 1; i < 101; i++) {
   const newDummyData = {
+    id: i,
     streamer: faker.name.findName(),
     stream_title: faker.random.words(),
     category: gameData[randomGameIdx],
