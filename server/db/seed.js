@@ -1,7 +1,7 @@
-const db = require('./index.js')
-const seedData = require('./dummy-data.json')
+const db = require('./index.js');
+const seedData = require('./dummy-data.js');
 
-seedData.map(data => {
+seedData.map((data) => {
   db.query('INSERT INTO liveStream SET ?;', data, (err, result) => {
     if (err) {
       console.error(err)
