@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS liveStreams (
   stream_title VARCHAR(100) NOT NULL,
   category VARCHAR(100) NOT NULL,
   game_poster_url VARCHAR(200),
+  video_url VARCHAR(200),
   total_views int NOT NULL,
   watching_now int NOT NULL
 ) ENGINE=INNODB;
