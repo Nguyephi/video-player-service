@@ -2,7 +2,7 @@ var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
-  database : 'twitchy'
+  database : 'twitchy',
 });
 
 connection.connect(function(err) {
