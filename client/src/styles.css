@@ -9,8 +9,16 @@ body {
   background-color: #0e0e10;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 .cursor {
   cursor: pointer;
+}
+.no-outline {
+  outline: none;
 }
 
 /* topbar component  */
@@ -36,11 +44,66 @@ body {
 }
 
 /* video-player component  */
-#video-player {
+.controls {
+  width:100%;
+  height:8.0971659919028340080971659919028%; /* of figure's height */
+  position:relative;
+  visibility: hidden;
+  bottom: 4rem;
+}
+
+.hide {
+  display: none;
+}
+
+.control-button {
+  height: 30px;
+  width: 30px;
+  background-color: rgba(128,128,128,.3);
   display: flex;
   justify-content: center;
-  height: 46.688rem;
+  border: 1px solid rgba(128,128,128,.1);
+  border-radius: 4px;
+}
+
+#video-controls {
+  background: linear-gradient(0deg,rgba(0,0,0,.8) 0,rgba(0,0,0,.35) 60%,transparent);
+  position: absolute;
+  padding: 0 3em;
+  bottom: 0;
+}
+
+#video-player-container:hover>.controls {
+  visibility: visible !important;
+  opacity: 1;
+}
+
+#video-player-container {
+  background-color: #000000;
+  height: auto;
   width: 100%;
+  max-height: 786px;
+  position: relative;
+}
+
+#video-player {
+  width: 100%;
+  height: 100%;
+  max-height: inherit;
+}
+
+#svg-container {
+  width: 20px;
+  height: 20px;
+}
+
+#play-pause {
+  background: none;
+  fill: #fff;
+}
+#play-pause {
+  background: none;
+  fill: #fff;
 }
 
 /* stream details component  */
