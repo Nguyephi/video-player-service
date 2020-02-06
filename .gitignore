@@ -1,3 +1,4 @@
 node_modules/
 package-lock.json
 client/public/main_bundle.js
+.env

@@ -1,5 +1,6 @@
 const app = require('./app.js');
-const port = 3001;
+require('dotenv').config()
+const { PORT } = process.env;
 const db = require('./db');
 
-app.listen(port, () => console.log('Video player service is listening on port ' + port));
+app.listen(PORT, () => console.log('Video player service is listening on port ' + PORT));
