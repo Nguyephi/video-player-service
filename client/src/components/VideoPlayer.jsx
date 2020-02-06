@@ -13,11 +13,6 @@ class VideoPlayer extends React.Component {
 
     play(e) {
         const video = document.getElementById("video-player");
-        const playPause = document.getElementById("play-pause");
-
-        // this.setState({
-        //   paused: !this.state.paused
-        // });
 
         if (this.state.paused == true) {
           video.play();
