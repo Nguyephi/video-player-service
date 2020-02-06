@@ -37,7 +37,7 @@ class App extends React.Component {
 
   render() {
     return (
-    <div id='video-player-container'>
+    <div id='video-player-service-container'>
       {this.state.streamerData &&
         <div>
           <TopBar
