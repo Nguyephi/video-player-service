@@ -12,9 +12,19 @@ This app is an attempt to replicate the Twitch video player from scratch.
 
 * In order to seed the database run `npm run seed`. This will populate the database with 100 fake data. The seed data is only good once and best used on an empty table.
 
+* You will also need to create a `.env` file at the root of the directory. More info [here](#environment-variables).
+
 * The next step is to simply start the server, with `npm run server_dev`, and run your client, with `npm run react_dev`. (Will edit this after deployment)
 
 * Now that the app is live you can view it here [Video-player-service](http://localhost:3001). In order to view the data that you seed simply pass an id as a param; [example](http://localhost:3001?9).
+
+## Environment Variables
+
+* PORT - port number for sever to listen to.
+* DB_HOST - host name. If in development mode use 'localhost'
+* DB_USER - put 'root' as default
+* DB_DATABASE - 'twitchy' is the name of the database in the app
+
 
 ## License
 
