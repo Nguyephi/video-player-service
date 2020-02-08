@@ -21,7 +21,6 @@ class App extends React.Component {
     .then(data => {
       data[0].total_views = this.commasWithNumber(data[0].total_views)
       data[0].watching_now = this.commasWithNumber(data[0].watching_now)
-      console.log(typeof data[0].video_url)
       this.setState({
         streamerId: data[0].id,
         streamerData: data[0]
