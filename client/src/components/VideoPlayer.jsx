@@ -10,7 +10,7 @@ class VideoPlayer extends React.Component {
         this.state = {
             paused: false,
             volume: 0,
-            tempVolume: .2
+            tempVolume: .1
         }
     }
 
@@ -35,7 +35,7 @@ class VideoPlayer extends React.Component {
         const video = document.getElementById("video-player");
         let tempValue = e.target.value
         if (e.target.value < 0.01) {
-            tempValue = .2
+            tempValue = .1
         }
         this.setState({
             volume: e.target.value,
