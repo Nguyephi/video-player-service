@@ -10,7 +10,7 @@ class VideoPlayer extends React.Component {
         this.state = {
             paused: false,
             volume: 0,
-            tempVolume: 1
+            tempVolume: .2
         }
     }
 
@@ -33,9 +33,13 @@ class VideoPlayer extends React.Component {
 
     handleVolume(e) {
         const video = document.getElementById("video-player");
+        let tempValue = e.target.value
+        if (e.target.value < 0.01) {
+            tempValue = .2
+        }
         this.setState({
             volume: e.target.value,
-            tempVolume: e.target.value
+            tempVolume: tempValue
         }, () => {
             video.volume = this.state.volume
         })
@@ -52,16 +56,14 @@ class VideoPlayer extends React.Component {
         if (this.state.volume > 0) {
             this.setState({
                 volume: 0
-            }, () => {
-                video.muted = true
             });
+            video.muted = true
         } else if (this.state.volume < 0.01) {
             this.setState({
                 volume: this.state.tempVolume
             }, () => {
-                if (this.state.volume > 0) {
-                    video.muted = false
-                }
+                video.muted = false
+                video.volume = this.state.volume
             })
         }
     }

@@ -31,7 +31,7 @@ const MuteButton = ({toggleMute, handleVolume, volume}) => (
         onClick={(e) => toggleMute(e)}
       >
       <div id='svg-container'>
-        <svg xmlns="http://www.w3.org/2000/svg" class="mute tw-icon__svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><g><path d="M9.146 2.853L5 7H4a2 2 0 00-2 2v2a2 2 0 002 2h1l4.146 4.146a.5.5 0 00.854-.353V3.207a.5.5 0 00-.854-.353zM12 8a2 2 0 110 4V8z"/><path d="M12 6a4 4 0 010 8v2a6 6 0 000-12v2z"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" className="mute tw-icon__svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px"><g><path d="M9.146 2.853L5 7H4a2 2 0 00-2 2v2a2 2 0 002 2h1l4.146 4.146a.5.5 0 00.854-.353V3.207a.5.5 0 00-.854-.353zM12 8a2 2 0 110 4V8z"/><path d="M12 6a4 4 0 010 8v2a6 6 0 000-12v2z"/></g></svg>
       </div>
       </button>
     }
