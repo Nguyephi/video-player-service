@@ -21,12 +21,13 @@ class App extends React.Component {
     .then(data => {
       data[0].total_views = this.commasWithNumber(data[0].total_views)
       data[0].watching_now = this.commasWithNumber(data[0].watching_now)
-      console.log(typeof data[0].video_url)
       this.setState({
         streamerId: data[0].id,
         streamerData: data[0]
       })
     })
+
+
   }
 
   commasWithNumber(num) {
@@ -36,6 +37,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log('windowY offesert',this.state)
     return (
     <div id='video-player-service-container'>
       {this.state.streamerData &&
@@ -48,7 +50,7 @@ class App extends React.Component {
             totalViews={this.state.streamerData.total_views}
             watchingNow={this.state.streamerData.watching_now}
             streamTitle={this.state.streamerData.stream_title}
-            gamePoster={this.state.streamerData.game_post_url}
+            gamePoster={this.state.streamerData.game_poster_url}
             category={this.state.streamerData.category}
           />
         </div>

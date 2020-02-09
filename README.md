@@ -1,6 +1,6 @@
 # Hrr-43-FEC Video-player-service
 
-Created by: `Philip Nguyen`
+Created by: [`Philip Nguyen`](https://www.linkedin.com/in/philip-nguyen-333963196/)
 
 This app is an attempt to replicate the Twitch video player from scratch.
 
@@ -8,13 +8,13 @@ This app is an attempt to replicate the Twitch video player from scratch.
 
 * Once you've cloned it you will need to install the node modules. Simply type `npm install` in the terminal.
 
-* This app uses mySQL database. You must have have it open in order to create the database and table. To create schema please refer to `schema.sql`.
+* This app uses mySQL database. You must have have it open in order to create the database and table. To create schema please refer to [`schema.sql`](schema.sql).
 
 * In order to seed the database run `npm run seed`. This will populate the database with 100 fake data. The seed data is only good once and best used on an empty table.
 
 * You will also need to create a `.env` file at the root of the directory. More info [here](#environment-variables).
 
-* The next step is to simply start the server, with `npm run server_dev`, and run your client, with `npm run react_dev`. (Will edit this after deployment)
+* The next step is to simply run your build, with `npm run react_dev`, and start the server, with `npm run server_dev`. (Will edit this after deployment)
 
 * Now that the app is live you can view it here [Video-player-service](http://localhost:3001). In order to view the data that you seed simply pass an id as a param; [example](http://localhost:3001?9).
 
