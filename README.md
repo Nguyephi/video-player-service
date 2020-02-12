@@ -2,7 +2,7 @@
 
 Created by: [`Philip Nguyen`](https://www.linkedin.com/in/philip-nguyen-333963196/)
 
-This app is an attempt to replicate the Twitch video player from scratch.
+Dynamically renders custom video player and stream details.
 
 ## How to run app locally
 
